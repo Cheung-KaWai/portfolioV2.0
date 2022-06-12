@@ -6,12 +6,13 @@ export default function Hero() {
     <HeroContainer>
       <HeroTitle>Hi, my name is Ka Wai </HeroTitle>
       <HeroSubtitle>A passionate future front end developer</HeroSubtitle>
+      <Scroll />
     </HeroContainer>
   );
 }
 
 const HeroContainer = styled.div`
-  width: 100vw;
+  max-width: 100%;
   height: 100vh;
   background-image: linear-gradient(
       to right,
@@ -39,6 +40,12 @@ const appear = keyframes`
   }
 `;
 
+const scroll = keyframes`
+  to{
+    top: 24px;
+  }
+`;
+
 const HeroTitle = styled.h1`
   transform: translateY(-10px);
   opacity: 0;
@@ -52,4 +59,27 @@ const HeroSubtitle = styled.p`
   padding: 2rem;
   opacity: 0;
   animation: ${appear} 1s 1s ease-out forwards;
+  margin-bottom: 2rem;
+`;
+
+const Scroll = styled.div`
+  width: 2rem;
+  height: 4rem;
+  border: 2px solid;
+  border-radius: 20px;
+  position: relative;
+
+  ::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #f03e3e;
+    position: absolute;
+    left: 50%;
+    top: 7px;
+    transform: translateX(-50%);
+    animation: ${scroll} 1s 2s ease-in-out forwards;
+  }
 `;
