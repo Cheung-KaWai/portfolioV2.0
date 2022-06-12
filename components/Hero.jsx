@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export default function Hero() {
   return (
@@ -26,12 +26,30 @@ const HeroContainer = styled.div`
   align-items: center;
 `;
 
+const slide = keyframes`
+  to {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+`;
+
+const appear = keyframes`
+  to {
+    opacity: 1;
+  }
+`;
+
 const HeroTitle = styled.h1`
+  transform: translateY(-10px);
+  opacity: 0;
   color: #ced4da;
   font-size: 4.2rem;
   font-weight: 500;
+  animation: ${slide} 1s ease-out forwards;
 `;
 
 const HeroSubtitle = styled.p`
   padding: 2rem;
+  opacity: 0;
+  animation: ${appear} 1s 1s ease-out forwards;
 `;
