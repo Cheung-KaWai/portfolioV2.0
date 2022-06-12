@@ -65,19 +65,32 @@ export default function About() {
           </Card>
         </Grid>
         <Socials>
-          <a href="https://www.instagram.com/kawaicheung2/" target="_blank">
+          <a
+            href="https://www.instagram.com/kawaicheung2/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Instagram />
           </a>
           <a
             href="https://linkedin.com/in/ka-wai-cheung-0849ba223"
             target="_blank"
+            rel="noreferrer"
           >
             <Linkedin />
           </a>
-          <a href="https://github.com/Cheung-KaWai" target="_blank">
+          <a
+            href="https://github.com/Cheung-KaWai"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Github />
           </a>
-          <a href="https://www.tiktok.com/@kawaiwebdev" target="_blank">
+          <a
+            href="https://www.tiktok.com/@kawaiwebdev"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Tiktok />
           </a>
         </Socials>
