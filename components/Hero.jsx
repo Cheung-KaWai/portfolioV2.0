@@ -11,7 +11,7 @@ export default function Hero() {
   );
 }
 
-const HeroContainer = styled.div`
+const HeroContainer = styled.section`
   max-width: 100%;
   height: 100vh;
   background-image: linear-gradient(

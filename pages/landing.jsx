@@ -1,5 +1,5 @@
-import Head from "next/head";
 import React from "react";
+import About from "../components/About";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 
@@ -7,7 +7,7 @@ export default function Landing() {
   return (
     <Layout>
       <Hero />
-      <Hero />
+      <About />
     </Layout>
   );
 }
