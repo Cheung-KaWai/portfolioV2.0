@@ -101,7 +101,7 @@ export default function About() {
 
 const AboutContainer = styled.section`
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   background-color: #e9ecef;
@@ -122,13 +122,12 @@ const AboutTitle = styled.h2`
 
 const Subtitle = styled.p`
   font-size: 1.8rem;
+  margin-bottom: 2rem;
 `;
 
 const Intro = styled.p`
   color: #495057;
-  padding: 2rem 0;
   line-height: 1.6;
-  margin-bottom: 6rem;
 `;
 
 const Grid = styled.div`
@@ -139,7 +138,8 @@ const Grid = styled.div`
 
 const Card = styled.div`
   width: 30rem;
-  height: 30rem;
+  height: auto;
+  margin: 6rem 0;
 `;
 
 const CardTitleContainer = styled.div`
