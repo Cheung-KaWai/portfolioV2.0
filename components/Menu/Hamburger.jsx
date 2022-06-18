@@ -25,6 +25,7 @@ const HamburgerContainer = styled.div`
   top: 3.5rem;
   right: 3.5rem;
   align-items: center;
+  cursor: pointer;
 `;
 
 const HamburgerLine = styled.span`
@@ -43,6 +44,7 @@ const CrossContainer = styled.div`
   align-items: center;
   background-color: red;
   opacity: 0;
+  cursor: pointer;
 `;
 
 const CrossLine = styled.span`
