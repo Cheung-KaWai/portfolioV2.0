@@ -3,16 +3,16 @@ import styled, { keyframes } from "styled-components";
 import Flag from "./UI/Flag";
 import useWindowSize from "./useWindowSize";
 
-export default function Hero() {
+export default function Hero({ id }) {
   const [width, height] = useWindowSize();
   return (
-    <HeroContainer>
+    <HeroContainer id={id}>
       <HeroTitle width={width}>Hi, my name is Ka Wai </HeroTitle>
       <HeroSubtitle width={width}>
         A passionate future front end developer
       </HeroSubtitle>
       <Flag />
-      <Scroll />
+      {/* <Scroll /> Not sure if i want to keep it */}
     </HeroContainer>
   );
 }

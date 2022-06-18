@@ -3,6 +3,7 @@ body {
   font-size: 62.5%;
   font-family: -apple-system, Poppins, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {

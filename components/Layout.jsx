@@ -1,11 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import Menu from "./Menu/Menu";
 
 export default function Layout({ children }) {
-  return <Container>{children}</Container>;
+  return (
+    <Container>
+      <Menu />
+      {children}
+    </Container>
+  );
 }
 
 const Container = styled.div`
-  width: 100vw;
   min-height: 100vh;
 `;

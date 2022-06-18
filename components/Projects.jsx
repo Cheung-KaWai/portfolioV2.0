@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import useWindowSize from "./useWindowSize";
 
-export default function Projects() {
+export default function Projects({ id }) {
   const [width, height] = useWindowSize();
 
   return (
-    <ProjectsContainer width={width}>
+    <ProjectsContainer width={width} id={id}>
       <ProjectsContent>
         <ProjectsTitle>Projects</ProjectsTitle>
         <ProjectSubtitle>- List of my personal projects</ProjectSubtitle>

@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import useWindowSize from "./useWindowSize";
 
-export default function Articles() {
+export default function Articles({ id }) {
   const [width, height] = useWindowSize();
 
   return (
-    <ArticlesContainer width={width}>
+    <ArticlesContainer width={width} id={id}>
       <ArticlesContent>
         <ArticlesTitle>Articles</ArticlesTitle>
         <Articlesubtitle>- Documenting my learning journey</Articlesubtitle>

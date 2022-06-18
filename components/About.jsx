@@ -9,11 +9,11 @@ import Hobby from "./UI/Hobby";
 // import Github from "./UI/Github";
 import useWindowSize from "./useWindowSize";
 
-export default function About() {
+export default function About({ id }) {
   const [width, height] = useWindowSize();
 
   return (
-    <AboutContainer width={width}>
+    <AboutContainer width={width} id={id}>
       <AboutContent>
         <AboutTitle>About me</AboutTitle>
         <Subtitle>- Student majoring in web & mobile development</Subtitle>

@@ -9,10 +9,10 @@ import Projects from "../components/Projects";
 export default function Landing() {
   return (
     <Layout>
-      <Hero />
-      <About />
-      <Projects />
-      <Articles />
+      <Hero id="home" />
+      <About id="about" />
+      <Projects id="projects" />
+      <Articles id="articles" />
       <Footer />
     </Layout>
   );
