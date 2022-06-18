@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import useWindowSize from "./useWindowSize";
 
 export default function Footer() {
+  const [width, height] = useWindowSize();
+
   return (
     <FooterContainer>
-      <List>
+      <List width={width}>
         <ListItem>Made by Ka Wai Cheung & Build with Next.js</ListItem>
-
         <ListItem>
           <a
             href="https://github.com/Cheung-KaWai"
@@ -56,7 +58,12 @@ const List = styled.ul`
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  width: 40rem;
+  width: 32rem;
 `;
 
-const ListItem = styled.li``;
+const ListItem = styled.li`
+  font-size: 1.4rem;
+  a {
+    font-size: 1.4rem;
+  }
+`;

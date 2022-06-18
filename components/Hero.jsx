@@ -1,12 +1,16 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import Flag from "./UI/Flag";
+import useWindowSize from "./useWindowSize";
 
 export default function Hero() {
+  const [width, height] = useWindowSize();
   return (
     <HeroContainer>
-      <HeroTitle>Hi, my name is Ka Wai </HeroTitle>
-      <HeroSubtitle>A passionate future front end developer</HeroSubtitle>
+      <HeroTitle width={width}>Hi, my name is Ka Wai </HeroTitle>
+      <HeroSubtitle width={width}>
+        A passionate future front end developer
+      </HeroSubtitle>
       <Flag />
       <Scroll />
     </HeroContainer>
@@ -52,7 +56,7 @@ const HeroTitle = styled.h1`
   transform: translateY(-10px);
   opacity: 0;
   color: #ced4da;
-  font-size: 4.2rem;
+  font-size: ${(props) => (props.width < 600 ? "2.8rem" : "4.2rem")};
   font-weight: 500;
   animation: ${slide} 1s ease-out forwards;
 `;
@@ -61,6 +65,7 @@ const HeroSubtitle = styled.p`
   padding: 2rem;
   opacity: 0;
   animation: ${appear} 1s 1s ease-out forwards;
+  font-size: ${(props) => (props.width < 600 ? "1.4rem" : "1.6rem")};
 `;
 
 const Scroll = styled.div`

@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import useWindowSize from "./useWindowSize";
 
 export default function Articles() {
+  const [width, height] = useWindowSize();
+
   return (
-    <ArticlesContainer>
+    <ArticlesContainer width={width}>
       <ArticlesContent>
         <ArticlesTitle>Articles</ArticlesTitle>
         <Articlesubtitle>- Documenting my learning journey</Articlesubtitle>
@@ -18,6 +21,7 @@ const ArticlesContainer = styled.section`
   display: flex;
   justify-content: center;
   background-color: #e9ecef;
+  padding: 2rem;
 `;
 
 const ArticlesContent = styled.div`

@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Computer from "./UI/Computer";
 import Grow from "./UI/Grow";
 import Hobby from "./UI/Hobby";
-import Instagram from "./UI/Instagram";
-import Linkedin from "./UI/Linkedin";
-import Tiktok from "./UI/Tiktok";
-import Github from "./UI/Github";
-import Link from "next/link";
+// import Instagram from "./UI/Instagram";
+// import Linkedin from "./UI/Linkedin";
+// import Tiktok from "./UI/Tiktok";
+// import Github from "./UI/Github";
+import useWindowSize from "./useWindowSize";
 
 export default function About() {
+  const [width, height] = useWindowSize();
+
   return (
-    <AboutContainer>
+    <AboutContainer width={width}>
       <AboutContent>
         <AboutTitle>About me</AboutTitle>
         <Subtitle>- Student majoring in web & mobile development</Subtitle>
@@ -42,7 +44,7 @@ export default function About() {
           <Card>
             <CardTitleContainer>
               <Grow />
-              <CardTitle>Goals end 2022</CardTitle>
+              <CardTitle>Goals</CardTitle>
             </CardTitleContainer>
             <List>
               <ListItem>3D web with Three.js</ListItem>
@@ -64,7 +66,7 @@ export default function About() {
             </List>
           </Card>
         </Grid>
-        <Socials>
+        {/* <Socials>
           <a
             href="https://www.instagram.com/kawaicheung2/"
             target="_blank"
@@ -93,7 +95,7 @@ export default function About() {
           >
             <Tiktok />
           </a>
-        </Socials>
+        </Socials> */}
       </AboutContent>
     </AboutContainer>
   );
@@ -105,6 +107,7 @@ const AboutContainer = styled.section`
   display: flex;
   justify-content: center;
   background-color: #e9ecef;
+  padding: 2rem;
 `;
 
 const AboutContent = styled.div`
@@ -132,14 +135,15 @@ const Intro = styled.p`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 5rem;
+  row-gap: 4rem;
+  margin-top: 6rem;
 `;
 
 const Card = styled.div`
-  width: 30rem;
+  width: 20rem;
   height: auto;
-  margin: 6rem 0;
 `;
 
 const CardTitleContainer = styled.div`

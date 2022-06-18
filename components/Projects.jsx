@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import useWindowSize from "./useWindowSize";
 
 export default function Projects() {
+  const [width, height] = useWindowSize();
+
   return (
-    <ProjectsContainer>
+    <ProjectsContainer width={width}>
       <ProjectsContent>
         <ProjectsTitle>Projects</ProjectsTitle>
         <ProjectSubtitle>- List of my personal projects</ProjectSubtitle>
@@ -18,6 +21,7 @@ const ProjectsContainer = styled.section`
   display: flex;
   justify-content: center;
   background-color: #343a40;
+  padding: 2rem;
 `;
 
 const ProjectsContent = styled.div`
