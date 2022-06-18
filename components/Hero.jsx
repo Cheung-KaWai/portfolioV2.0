@@ -1,11 +1,13 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import Flag from "./UI/Flag";
 
 export default function Hero() {
   return (
     <HeroContainer>
       <HeroTitle>Hi, my name is Ka Wai </HeroTitle>
       <HeroSubtitle>A passionate future front end developer</HeroSubtitle>
+      <Flag />
       <Scroll />
     </HeroContainer>
   );
@@ -59,7 +61,6 @@ const HeroSubtitle = styled.p`
   padding: 2rem;
   opacity: 0;
   animation: ${appear} 1s 1s ease-out forwards;
-  margin-bottom: 2rem;
 `;
 
 const Scroll = styled.div`
