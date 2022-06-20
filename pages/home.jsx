@@ -6,6 +6,12 @@ import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import Projects from "../components/Projects";
 
+import { getArticles } from "../lib/data";
+
+export async function getStaticProps() {
+  return await getArticles();
+}
+
 export default function Home({ articles = [] }) {
   return (
     <Layout>
