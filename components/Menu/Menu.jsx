@@ -26,7 +26,7 @@ export default function Menu() {
         top: 0,
         right: 0,
         borderRadius: 0,
-        duration: 1,
+        duration: 0.6,
         ease: "slow(0.7, 0.7, false)",
       })
       .to(menuRef.current, {

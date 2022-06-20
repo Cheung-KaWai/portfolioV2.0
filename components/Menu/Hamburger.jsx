@@ -32,6 +32,7 @@ const HamburgerLine = styled.span`
   width: ${(props) => (props.small ? "1.5rem" : "2rem")};
   height: 0.3rem;
   background-color: #ced4da;
+  border-radius: 10px;
 `;
 
 const CrossContainer = styled.div`
