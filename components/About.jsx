@@ -7,7 +7,7 @@ import Hobby from "./UI/Hobby";
 // import Linkedin from "./UI/Linkedin";
 // import Tiktok from "./UI/Tiktok";
 // import Github from "./UI/Github";
-import useWindowSize from "./useWindowSize";
+import useWindowSize from "./UI/useWindowSize";
 
 export default function About({ id }) {
   const [width, height] = useWindowSize();

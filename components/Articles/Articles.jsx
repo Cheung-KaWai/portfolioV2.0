@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import useWindowSize from "../useWindowSize";
+import useWindowSize from "../UI/useWindowSize";
 
 export default function Articles({ id, articles }) {
   const [width, height] = useWindowSize();
