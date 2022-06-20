@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import useWindowSize from "./useWindowSize";
+import useWindowSize from "../useWindowSize";
 
-export default function Articles({ id }) {
+export default function Articles({ id, articles }) {
   const [width, height] = useWindowSize();
 
   return (
@@ -10,6 +10,9 @@ export default function Articles({ id }) {
       <ArticlesContent>
         <ArticlesTitle>Articles</ArticlesTitle>
         <Articlesubtitle>- Documenting my learning journey</Articlesubtitle>
+        {articles.map((article, index) => (
+          <p key={index}>{article.title}</p>
+        ))}
       </ArticlesContent>
     </ArticlesContainer>
   );
