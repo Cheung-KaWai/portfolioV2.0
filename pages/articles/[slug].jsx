@@ -19,7 +19,7 @@ export async function getStaticProps({ params }) {
 export default function Article({ article }) {
   return (
     <div>
-      <p>{article.title}</p>
+      <p>{article?.title}</p>
     </div>
   );
 }
