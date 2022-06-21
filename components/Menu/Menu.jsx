@@ -55,23 +55,28 @@ export default function Menu() {
         <Hamburger hamburger={hamburger} cross={cross} />
         <NavContent ref={menuLinks}>
           <NavItem>
-            <Link href="#home">
+            <Link href="/home/#home">
               <a>Home</a>
             </Link>
           </NavItem>
           <NavItem>
-            <Link href="#about">
+            <Link href="/home/#about">
               <a>About</a>
             </Link>
           </NavItem>
           <NavItem>
-            <Link href="#projects">
+            <Link href="/home/#projects">
               <a>Projects</a>
             </Link>
           </NavItem>
           <NavItem>
-            <Link href="#articles">
+            <Link href="/home/#articles">
               <a>Articles</a>
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link href="/home/">
+              <a>Test</a>
             </Link>
           </NavItem>
         </NavContent>

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ListLinks from "../Articles/ListLinks";
 import useWindowSize from "../UI/useWindowSize";
 
 export default function Articles({ id, articles }) {
@@ -10,9 +11,7 @@ export default function Articles({ id, articles }) {
       <ArticlesContent>
         <ArticlesTitle>Articles</ArticlesTitle>
         <Articlesubtitle>- Documenting my learning journey</Articlesubtitle>
-        {articles.map((article, index) => (
-          <p key={index}>{article.title}</p>
-        ))}
+        <ListLinks articles={articles} />
       </ArticlesContent>
     </ArticlesContainer>
   );

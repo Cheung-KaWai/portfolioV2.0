@@ -12,7 +12,7 @@ export async function getStaticProps() {
   return await getArticles();
 }
 
-export default function Home({ articles = [] }) {
+export default function Home({ articles }) {
   return (
     <Layout>
       <Hero id="home" />

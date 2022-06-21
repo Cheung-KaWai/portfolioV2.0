@@ -1,5 +1,6 @@
 import React from "react";
 import { getArticleBySlug, getPaths } from "../../lib/data";
+import Layout from "../../components/Home/Layout";
 
 export async function getStaticPaths() {
   const paths = await getPaths();
@@ -18,8 +19,8 @@ export async function getStaticProps({ params }) {
 
 export default function Article({ article }) {
   return (
-    <div>
+    <Layout>
       <p>{article?.title}</p>
-    </div>
+    </Layout>
   );
 }
