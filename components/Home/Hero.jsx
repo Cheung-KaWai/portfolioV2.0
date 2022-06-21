@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import Flag from "./UI/Flag";
-import useWindowSize from "./UI/useWindowSize";
+import Flag from "../UI/Flag";
+import useWindowSize from "../UI/useWindowSize";
 
 export default function Hero({ id }) {
   const [width, height] = useWindowSize();

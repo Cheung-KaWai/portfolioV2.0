@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Computer from "./UI/Computer";
-import Grow from "./UI/Grow";
-import Hobby from "./UI/Hobby";
+import Computer from "../UI/Computer";
+import Grow from "../UI/Grow";
+import Hobby from "../UI/Hobby";
 // import Instagram from "./UI/Instagram";
 // import Linkedin from "./UI/Linkedin";
 // import Tiktok from "./UI/Tiktok";
 // import Github from "./UI/Github";
-import useWindowSize from "./UI/useWindowSize";
+import useWindowSize from "../UI/useWindowSize";
 
 export default function About({ id }) {
   const [width, height] = useWindowSize();

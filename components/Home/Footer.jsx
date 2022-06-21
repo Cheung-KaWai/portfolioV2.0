@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import useWindowSize from "./UI/useWindowSize";
+import useWindowSize from "../UI/useWindowSize";
 
 export default function Footer() {
   const [width, height] = useWindowSize();

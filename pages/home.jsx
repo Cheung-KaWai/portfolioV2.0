@@ -1,10 +1,10 @@
 import React from "react";
-import About from "../components/About";
-import Articles from "../components/Articles/Articles";
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-import Layout from "../components/Layout";
-import Projects from "../components/Projects";
+import About from "../components/Home/About";
+import Articles from "../components/Home/Articles";
+import Footer from "../components/Home/Footer";
+import Hero from "../components/Home/Hero";
+import Layout from "../components/Home/Layout";
+import Projects from "../components/Home/Projects";
 
 import { getArticles } from "../lib/data";
 
