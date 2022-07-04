@@ -22,7 +22,7 @@ export async function getStaticProps({ params }) {
 
 export default function Article({ article }) {
   const getMarkdownText = () => {
-    const rawMarkup = marked(article.description);
+    const rawMarkup = marked(article?.description);
     return { __html: rawMarkup };
   };
   return (
