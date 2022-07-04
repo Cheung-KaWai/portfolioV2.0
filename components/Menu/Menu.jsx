@@ -26,18 +26,19 @@ export default function Menu() {
         top: 0,
         right: 0,
         borderRadius: 0,
-        duration: 0.6,
+        duration: 0.5,
         ease: "slow(0.7, 0.7, false)",
       })
       .to(menuRef.current, {
         backgroundColor: "rgb(20, 20, 20)",
-      })
-      .to(menuLinks.current, {
-        visibility: "visible",
+        duration: 0.2,
       })
       .to(cross.current, {
         opacity: 1,
         duration: 0.2,
+      })
+      .to(menuLinks.current, {
+        visibility: "visible",
       });
   }, []);
 
@@ -55,7 +56,7 @@ export default function Menu() {
         <Hamburger hamburger={hamburger} cross={cross} />
         <NavContent ref={menuLinks}>
           <NavItem>
-            <Link href="/home/#home">
+            <Link href="/home">
               <a>Home</a>
             </Link>
           </NavItem>

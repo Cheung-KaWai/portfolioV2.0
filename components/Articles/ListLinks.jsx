@@ -12,7 +12,7 @@ export default function ListLinks({ articles }) {
   );
 }
 
-const ListContainer = styled.div`
+const ListContainer = styled.article`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
