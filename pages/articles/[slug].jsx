@@ -28,7 +28,7 @@ export default function Article({ article }) {
   return (
     <LayoutArticle>
       <Title>{article?.title}</Title>
-      <Date>{article.createdAt.substring(0, 10)}</Date>
+      <Date>{article?.createdAt.substring(0, 10)}</Date>
       <div
         dangerouslySetInnerHTML={getMarkdownText()}
         className={styles.content}
